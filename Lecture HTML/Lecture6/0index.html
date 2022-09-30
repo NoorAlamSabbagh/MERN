@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>HTML Tables and attributtes</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        table{
+            color: blue;
+        }
+
+        th[scope="row"]{
+            color: brown;
+        }
+        tbody{
+            background-color: bisque;
+        }
+    </style>
+    <script>
+       document.onreadystatechange=function(){
+        if(this.readyState === "complete"){
+         document.getElementById('gaurav-name').innerHTML="Gaurav Laddha"
+        }
+       }
+    </script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <a href="https://google.com">Google</a>
+  <table border ="2px" style="border: solid; background-color: aqua">
+    <caption>All Students in the class</caption>
+    <thead>
+        <th scope="col">Roll NO</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone No</th>
+        <th scope="col">Class</th>
+        <th scope="col">Section</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Ajay Bhist</td>
+        <td>997876787</td>
+        <td colspan="2">7A</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Avikalp Gupta</td>
+        <td>997876787</td>
+        <td colspan="2">7A</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Dhananjay Kumar</td>
+        <td rowspan="3">997876787</td>
+        <td>7</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td id = gaurav-name>4</td>
+        <td>Gaurav Verma</td>
+        <td rowspan="2" colspan="2">7B</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Hitesh Saini</td>
+        <td>7</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Ibadat Jain</td>
+    
+    </tr>
+</tbody>
+<caption>All Students in my class</caption>
+<tfoot>
+    <td>82</td>
+    <td>Alif Laila</td>
+    <td>9570457040</td>
+    <td>8</td>
+    <td>A</td>
+</tfoot>
+  </table> 
+  
+  
+  <table border="true">
+    <tr>
+        <th scope="row">First Name</th>
+        <td>Avikalp</td>
+    </tr>
+    <tr>
+        <th scope="row">Last Name</th>
+        <td>Gupta</td>
+    </tr>
+    <tr>
+        <th>Years of Experience</th>
+        <td>6</td>
+
+    </tr>
+    <caption>Author Info</caption>
+  </table>
+</body>
+</html>
