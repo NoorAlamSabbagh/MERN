@@ -1,0 +1,27 @@
+div.mydiv:active{
+    font-weight: bold;
+}
+
+a:focus{
+    background-color: aquamarine;
+}
+
+button:focus{
+    color: aqua;
+}
+
+p:hover{
+    background-color: gray;
+}
+ol:hover{
+    background-color: yellow;
+}
+li:hover{
+    color: red;
+}
+a:link{
+    color: greenyellow;
+}
+a:visited{
+    color: brown;
+}
